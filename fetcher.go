@@ -65,7 +65,7 @@ func NewFetcher(port int, option *Option) (*Fetcher, error) {
 			Timeout:        120,
 			UseGzip:        true,
 			AllowRedirects: true,
-			Url: "http://localhost",
+			Url:            "http://localhost",
 		}
 	}
 
@@ -191,7 +191,7 @@ func (this *Fetcher) checkFetcherJS() (string, error) {
 		paths = strings.Split(str, ";")
 	}
 	for _, path := range paths {
-		fetcherJSPath := path + "/src/github.com/nladuo/go-phantomjs-fetcher/phantomjs_fetcher.js"
+		fetcherJSPath := path + "/src/github.com/jiangzhengqiao/phantomjs/phantomjs_fetcher.js"
 		if this.exist(fetcherJSPath) {
 			return fetcherJSPath, nil
 		}
