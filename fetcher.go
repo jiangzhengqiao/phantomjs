@@ -16,7 +16,7 @@ import (
 
 const (
 	ErrPhantomJSNotFound = "\"phantomjs\": executable file not found in $PATH"
-	ErrFetcherJSNotFound = "cannot find ./phantomjs_fetcher.js or $GOPATH/github.com/src/nladuo/go-phantomjs-fetcher/phantomjs_fetcher.js"
+	ErrFetcherJSNotFound = "cannot find ./phantomjs_fetcher.js or $GOPATH/src/github.com/jiangzhengqiao/phantomjs/phantomjs_fetcher.js"
 )
 
 const (
